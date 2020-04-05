@@ -1,0 +1,7 @@
+<%# <%= link_to "メッセージ画面へ",new_message_path %>
+<% @messages.each do |message| %>
+  <p>
+    <%= message.title %>
+    <%= message.content %>
+  </p>
+<% end %>
