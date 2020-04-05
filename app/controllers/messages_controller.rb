@@ -15,8 +15,15 @@ class MessagesController < ApplicationController
     Message.create(message_params)
   end
 
+  # 詳細表示画面に対応するアクション
   def show
     @message = Message.find(params[:id])
+  end
+
+  # 削除表示画面に対応するアクション
+  def destroy
+    message = Message.find(params[:id])
+    message.destroy
   end
 
   private
