@@ -1,5 +1,10 @@
 class MessagesController < ApplicationController
 
+   # 一覧表示機能画面に対応するアクション
+   def index
+    @message = Message.all
+   end
+
   # 新規投稿画面に対応するアクション
   def new
     @message = Message.new
