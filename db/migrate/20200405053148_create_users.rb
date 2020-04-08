@@ -7,4 +7,4 @@ class CreateUsers < ActiveRecord::Migration[5.2]
     end
   end
 end
-# コンフリクトの解消
+# コンフリクト解消のため作られた
